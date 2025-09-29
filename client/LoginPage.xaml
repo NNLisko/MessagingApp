@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MessageLisko.LoginPage"
+             Title="Login Page">
+    <VerticalStackLayout>
+        <Label 
+            Text="LoginPage"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Please enter your temporary session username."
+            Style="{StaticResource SubHeadline}"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Login temporary session user"/>
+        <Entry 
+            x:Name="SessionUserName"
+            Placeholder="Username..."
+            Completed="OnEntryCompleted" 
+            Margin="10"
+            WidthRequest="200"/>
+    </VerticalStackLayout>
+</ContentPage>
